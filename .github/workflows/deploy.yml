@@ -12,6 +12,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Change directory to markdown-previewer
+        run: cd markdown-previewer
+
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
@@ -27,4 +30,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./markdown-previewer/build
+          publish_dir: ./build
