@@ -76,6 +76,7 @@ _This is Italicized Text_
               id="footer-link"
               href="https://github.com/Nix7amcm"
               target='_blank'
+              rel='noopener noreferrer'
             > Nix7amcm⚡</a>
           </p>
         </footer>
